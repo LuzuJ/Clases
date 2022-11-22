@@ -164,9 +164,3 @@ Esto es un \*ejemplo con asteriscos\*
 
 [Git push xD](https://es.stackoverflow.com/questions/518780/problema-con-git-push-fatal-no-configured-push-destination)
 
-## Edit clases
-
-1.- Martes: Talleres, Numero infinito, torre al cielo.
-2.- Miercoles: Markdown  
-3.- Jueves: Git  
-4.- Viernes: Nube git
