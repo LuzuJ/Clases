@@ -164,6 +164,11 @@ Esto es un \*ejemplo con asteriscos\*
 
 [Git push xD](https://es.stackoverflow.com/questions/518780/problema-con-git-push-fatal-no-configured-push-destination)
 
+1.- Martes: Talleres, Numero infinito, torre al cielo.
+2.- Miercoles: Markdown  
+3.- Jueves: Git  
+4.- Viernes: Nube git
+
 # **Quinta clase**
 
 **Developer**: Creador del programa  
@@ -174,3 +179,37 @@ virtual machine  -> bytecode  `.class`
 Sistema operativo *.exe  
 Win Linux `01001`  
 Mac "Multiplataforma"
+
+Paquetes  
+Detalle global  
+
+1.- Metodos:  
+* Retornar valor "Funcion"  
+* No retorna valor "Procedimiento"  
+
+`Hola.java`  
+ ## *Ejm en Hola.java*
+
+Estandar Codificado: Camelcase (nombreCompletoApellido)
+
+    
+
+**Parametro** *Propiedad/atributos* /ambito(Public, private, protect)/ /tipo de dato/ /nombre variable/  
+
+*variable* /tipo de datos/  
+/nombre de variable(1.- estandar camelcase, 2.- nombre asociado al negocio, 3.- declaracion)/;  
+~~~
+/tipo dato>  
+    String  (Primitivos)
+    Bool  
+    Int  
+    ...
+    bool  (orientada a objetos)  
+    int  
+    = /Valor/; 
+~~~
+
+### Deber  
+
+Revisar tipos de datos orientada a objetos y ordinarios
+
