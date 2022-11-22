@@ -164,3 +164,13 @@ Esto es un \*ejemplo con asteriscos\*
 
 [Git push xD](https://es.stackoverflow.com/questions/518780/problema-con-git-push-fatal-no-configured-push-destination)
 
+# **Quinta clase**
+
+**Developer**: Creador del programa  
+*java*: Lenguaje de programacion   
+***Copilador***: Analizador *sistactico* o *semantico*, interprete  
+
+virtual machine  -> bytecode  `.class`  
+Sistema operativo *.exe  
+Win Linux `01001`  
+Mac "Multiplataforma"
