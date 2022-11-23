@@ -215,3 +215,15 @@ Revisar tipos de datos orientada a objetos y ordinarios
 
 Hola
 
+## Clase 6
+
+**Algoritmia**  
+1.- Algoritmo:  
+* Pseudocodigo  
+* Diadramas de flujo -> figuritas   
+* Code (Java)  
+* Trace -> Debug
+
+2.- Solucion  
+3.- Problema  
+
