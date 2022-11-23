@@ -213,17 +213,32 @@ Estandar Codificado: Camelcase (nombreCompletoApellido)
 
 Revisar tipos de datos orientada a objetos y ordinarios
 
-Hola
-
-## Clase 6
+## Clase 6; Miercoles 23 
 
 **Algoritmia**  
 1.- Algoritmo:  
+
 * Pseudocodigo  
 * Diadramas de flujo -> figuritas   
 * Code (Java)  
-* Trace -> Debug
+* Trace -> Debug : Para saber si esta bien configurado, 
+las salidas del programa.  
+Se genera la informacion en la Ram, ocupa un espacio de almacenamiento.  
 
-2.- Solucion  
-3.- Problema  
+*Solucion*  
+2.- Problema
 
+**1)ERROR:**  
+1.- Logico: Division entre 0  
+2.- Compilador: En tiempo de ejecucion  
+
+* Sintactico  
+* Semantico 
+
+**2) ISSUE:** Tiene un defecto en el programa, no lo cierra pero lo hace ir mal.  
+**3) BUG:** Vulberabilidad, se aprovecha de los **ISSUE**     
+
+~~~
+To se puede mejorar :v  
+Operador ternario, consultar
+~~~
