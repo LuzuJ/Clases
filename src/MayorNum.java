@@ -6,15 +6,15 @@ public class MayorNum {
         // Es mas estricto mas tiempo
         if (a == b) {
             System.out.println(a + " es igual a " + b); 
-            break ;
+            //break ;
         }
         if(a > b){
             System.out.println(a + " es el mayor");
-            break;
+           // break;
         }
         if(b > a) {
              System.out.println(b + " es el mayor");
-            break ;
+           // break ;
         }
         // Menor tiempo muchas lineas
         if (c == d) {

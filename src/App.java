@@ -1,5 +1,3 @@
-import javax.swing.text.StyleContext.SmallAttributeSet;
-
 public class App {
     public static void main(String[] args) {
         String nombre = "Jonathan"; //Variables
