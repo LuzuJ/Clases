@@ -7,7 +7,8 @@ public class Deber1Lobo {
      * no puede ir caperursa sola.
      * Lobo come caperus, caperusa come uvas.
      */
-    public static void combinarArrays(String elec, char[] aRio, char[] dRio) {
+    public static void combinarArrays(String elec, char[] aRio, char[] dRio, boolean bandera) {
+        if (elec.equals("l")||elec.equals("o")||elec.equals("c")||elec.equals("u")) {
         if (elec.equals("l")) {
             char temp1 = aRio[1];
             aRio[1] = dRio[1];
@@ -16,7 +17,8 @@ public class Deber1Lobo {
             char temp2 = aRio[0];
             aRio[0] = dRio[0];
             dRio[0] = temp2;
-        } else if (elec.equals("c")) {
+        } 
+        if (elec.equals("c")) {
             char temp1 = aRio[2];
             aRio[2] = dRio[2];
             dRio[2] = temp1;
@@ -24,7 +26,8 @@ public class Deber1Lobo {
             char temp2 = aRio[0];
             aRio[0] = dRio[0];
             dRio[0] = temp2;
-        } else if (elec.equals("u")) {
+        } 
+        if (elec.equals("u")) {
             char temp1 = aRio[3];
             aRio[3] = dRio[3];
             dRio[3] = temp1;
@@ -32,13 +35,16 @@ public class Deber1Lobo {
             char temp2 = aRio[0];
             aRio[0] = dRio[0];
             dRio[0] = temp2;
-        } else if (elec.equals("o")) {
+        } 
+        if (elec.equals("o")) {
             char temp2 = aRio[0];
             aRio[0] = dRio[0];
             dRio[0] = temp2;
-        }else {
-            System.out.println("No valido");
-        } 
+        }
+        } else {
+        System.out.println("Game Over");
+        bandera = false;
+        }   
     }
     public static void main (String[] args) {
         Scanner sc =new Scanner (System.in);
@@ -62,13 +68,13 @@ public class Deber1Lobo {
                 System.out.println("A quien desea pasar al otro lado?");
 
                 String elec = sc.nextLine().toLowerCase();
-                combinarArrays(elec, aRio, dRio);
+                combinarArrays(elec, aRio, dRio,bandera);
 
                 System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
                 System.out.println("A quien desea regresar?");
                 elec = sc.nextLine().toLowerCase();
                 
-                combinarArrays(elec, aRio, dRio);
+                combinarArrays(elec, aRio, dRio, bandera);
                 System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
                 
             }else {
@@ -77,7 +83,6 @@ public class Deber1Lobo {
             }
 
         }
-
     }
 
    
