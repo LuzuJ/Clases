@@ -1,67 +1,53 @@
+//Lobo, caperusita y uvas, cruzar rio, no se comen entre si mientras el observador ve, hasta 2 pueden cruzar el rio y regresar, lobo come caperusa, caperusita uvas
 import java.util.Arrays;
 import java.util.Scanner;
 public class Deber1Lobo {
-    /*
-     * Lobo, caperusita y uvas, cruzar rio y usar arrays, no se comen entre si mientras el observador ve,
-     * solo se puede llevar al observador y a una persona, tambien regresar, puede regresar el observador solo
-     * no puede ir caperursa sola.
-     * Lobo come caperus, caperusa come uvas.
-     */
     /**
      * Funcion para poder cambiar de posiciones entre arrays.
-     * 
-     * @param elec Que valor desea cambiar
+     * @param nombre Jonatha Luzuriaga
+     * @param fecha 5/12/2022
+     * @param elec Que posicion va a cambiar
      * @param aRio array de salida
      * @param dRio array de llegada
      */
-    public static void combinarArrays(String elec, char[] aRio, char[] dRio) {
-        if (elec.equals("l")||elec.equals("o")||elec.equals("c")||elec.equals("u")) {
-            switch (elec) {
-                case "l":
-                char temp1 = aRio[1];
-                aRio[1] = dRio[1];
-                dRio[1] = temp1;
-    
-                char temp2 = aRio[0];
-                aRio[0] = dRio[0];
-                dRio[0] = temp2;
-                break;
-
-                case "c":
-                temp1 = aRio[2];
-                aRio[2] = dRio[2];
-                dRio[2] = temp1;
-    
-                temp2 = aRio[0];
-                aRio[0] = dRio[0];
-                dRio[0] = temp2;
-                break;
-
-                case "u":
-                temp1 = aRio[3];
-                aRio[3] = dRio[3];
-                dRio[3] = temp1;
-    
-                temp2 = aRio[0];
-                aRio[0] = dRio[0];
-                dRio[0] = temp2;
-                break;
-
-                case "o":
-                temp2 = aRio[0];
-                aRio[0] = dRio[0];
-                dRio[0] = temp2;
-                break;
-            
-                default:
-                System.out.println("No es valido");
-                break;
-            }
+    public static void combinarArrays(char elec, char[] aRio, char[] dRio) {
+        int posicion = 0;
+        char temp1, temp2;
+      //  System.out.printl(elec=='o'? cambioPosicion(aRio, dRio): elec=='l'? posicion = 1: elec=='c'? posicion=2 :elec=='u'? posicion=3: "No es posible");
+        if (elec == 'o') {
+            cambioPosicion(aRio,dRio);
+        }else if(elec == 'l') {
+            posicion = 1;
+        } else if (elec == 'c') {
+            posicion = 2;
+        } else if (elec == 'u') {
+            posicion = 3;
+        } else {
+            System.out.println("No coincide");
         }
+        //Cambio  de pisiciones dependiendo del cuerpo
+        temp1 = aRio[posicion];
+        aRio[posicion] = dRio[posicion];
+        dRio[posicion] = temp1;
+        cambioPosicion(aRio,dRio);
     }
-
+    /**
+     * Cambio de posicion para el 0
+     * @param nombre Jonathan Luzuriaga
+     * @param fecha 05/12/2022
+     * @param aRio arrays de salida
+     * @param dRio arrays de llegada
+     */
+    public static void cambioPosicion(char[] aRio, char[] dRio) {
+        char temp1, temp2;
+        temp2 = aRio[0];
+        aRio[0] = dRio[0];
+        dRio[0] = temp2;
+    }
     /**
      * Arrays para comprobar si el jugador gano
+     * @param nombre Jonatha Luzuriaga
+     * @param fecha 5/12/2022
      * @param aRio arrays de salida
      * @param dRio arrays de llegada
      * @return valor a retornar
@@ -71,63 +57,37 @@ public class Deber1Lobo {
         if ((dRio[0]=='O')&&(dRio[1]=='L')&&(dRio[2]=='C')&&(dRio[3]=='U')) {
             System.out.println("GANATES :3");
             band = false;
-        }
-        if ((aRio[0] == ' ' && aRio[1]=='L' && aRio[2]=='C')|| (dRio[0] == ' ' && dRio[1]=='L' && dRio[2]=='C')) {
+        } else if ((aRio[0] == ' ' && aRio[1]=='L' && aRio[2]=='C' && aRio[3]=='U') || ( dRio[0] == ' ' && dRio[1]=='L' && dRio[2]=='C' && dRio[3]=='U' ))  {
+            System.out.println("GAME OVER");
+            band = false;
+        } else if ((aRio[0] == ' ' && aRio[1]=='L' && aRio[2]=='C')|| (dRio[0] == ' ' && dRio[1]=='L' && dRio[2]=='C')) {
             System.out.println("PERDISTE MANO, EL LOBO SE COMIO A LA CAPERUSITA");
             band = false;
-        }
-        if ((aRio[0] == ' ' && aRio[2]=='C' && aRio[3]=='U')|| (dRio[0] == ' ' && dRio[1]=='C' && dRio[2]=='U')) {
+        } else if ((aRio[0] == ' ' && aRio[2]=='C' && aRio[3]=='U')|| (dRio[0] == ' ' && dRio[1]=='C' && dRio[2]=='U')) {
             System.out.println("PERDISTE MANO, LA CAPERUSITA SE COMIO LAS UVAS");
             band = false;
-        }
+        } 
         return band;
     }
-
     public static void main (String[] args) {
         Scanner sc =new Scanner (System.in);
         char aRio[] = {'O', 'L', 'C', 'U'};
         char dRio[] = {' ', ' ', ' ', ' '};
         boolean bandera = true, bandera2 = true;
-        System.out.println(" ");
-        System.out.println("Alfrente del rio tiene al observador, lobo, caperusita y uvas,");
-        System.out.println("no se pueden quedar lobo ni caperusita, caperusita o uvas");
-        System.out.println("Mientras el observador se encuentre no se comerán entre si.");
-        System.out.println("El observador debe llevar a todos al otro lado del rio, ¿Cómo lo hace?");
-
-        // Repetir hasta que el jugador gane
+        System.out.println("Alfrente del rio tiene al observador, lobo, caperusita y uvas,no se pueden quedar lobo ni caperusita, caperusita o uvas");
+        System.out.println("Mientras el observador se encuentre no se comerán entre si. Como lo hace?");
         while (bandera == true) {
           bandera = true;
-            //Condiciones para ganar
            bandera2 = condiciones(aRio, dRio);
            if (bandera2 == false) {
             System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
             break;
            }
-    
-           //Eleccion pa jugar
             System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
-            System.out.println("A quien desea pasar al otro lado?");
-
-            //Mostrar proceso
+            System.out.println("A quien desea llevar al otro lado?");
             String elec = sc.nextLine().toLowerCase();
-            combinarArrays(elec, aRio, dRio);
-
-            //Condiciones para ganar
-            bandera2 = condiciones(aRio, dRio); 
-            if (bandera2 == false) {
-                System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
-                break;
-               }
-
-            //Elecciones 
-            System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
-            System.out.println("A quien desea regresar?");
-            elec = sc.nextLine().toLowerCase();
-                
-           combinarArrays(elec, aRio, dRio);
-           System.out.println(Arrays.toString(aRio) + "  RIO  " + Arrays.toString(dRio));
+            combinarArrays(elec.charAt(0), aRio, dRio);
         }
         sc.close();
     }
-
 }
