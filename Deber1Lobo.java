@@ -1,4 +1,8 @@
-//Lobo, caperusita y uvas, cruzar rio, no se comen entre si mientras el observador ve, hasta 2 pueden cruzar el rio y regresar, lobo come caperusa, caperusita uvas
+/**
+ * @author : Jonathan Luzuriaga
+ * @date : 6/dic/2022
+ * Usando arrays, pasamos lobo, caperucita, uvas al otro lado de un rio, con un observador
+ */
 import java.util.Arrays;
 import java.util.Scanner;
 public class Deber1Lobo {
@@ -11,9 +15,10 @@ public class Deber1Lobo {
      * @param dRio array de llegada
      */
     public static void combinarArrays(char elec, char[] aRio, char[] dRio) {
-        int posicion = 0;
-        char temp1, temp2;
-      //  System.out.printl(elec=='o'? cambioPosicion(aRio, dRio): elec=='l'? posicion = 1: elec=='c'? posicion=2 :elec=='u'? posicion=3: "No es posible");
+        int posicion =0;
+        char temp1;
+        //Se puede arreglar lo de abajo? :V
+      // posicion = (elec=='o'? cambioPosicion(aRio, dRio): elec=='l'? posicion = 1: elec=='c'? posicion=2: elec=='u'? posicion=3: posicion = 0); 
         if (elec == 'o') {
             cambioPosicion(aRio,dRio);
         }else if(elec == 'l') {
@@ -22,9 +27,9 @@ public class Deber1Lobo {
             posicion = 2;
         } else if (elec == 'u') {
             posicion = 3;
-        } else {
-            System.out.println("No coincide");
-        }
+        } else 
+            System.out.println("No es valido");
+        
         //Cambio  de pisiciones dependiendo del cuerpo
         temp1 = aRio[posicion];
         aRio[posicion] = dRio[posicion];
@@ -33,21 +38,17 @@ public class Deber1Lobo {
     }
     /**
      * Cambio de posicion para el 0
-     * @param nombre Jonathan Luzuriaga
-     * @param fecha 05/12/2022
      * @param aRio arrays de salida
      * @param dRio arrays de llegada
      */
     public static void cambioPosicion(char[] aRio, char[] dRio) {
-        char temp1, temp2;
+        char temp2;
         temp2 = aRio[0];
         aRio[0] = dRio[0];
         dRio[0] = temp2;
     }
     /**
      * Arrays para comprobar si el jugador gano
-     * @param nombre Jonatha Luzuriaga
-     * @param fecha 5/12/2022
      * @param aRio arrays de salida
      * @param dRio arrays de llegada
      * @return valor a retornar
@@ -58,7 +59,7 @@ public class Deber1Lobo {
             System.out.println("GANATES :3");
             band = false;
         } else if ((aRio[0] == ' ' && aRio[1]=='L' && aRio[2]=='C' && aRio[3]=='U') || ( dRio[0] == ' ' && dRio[1]=='L' && dRio[2]=='C' && dRio[3]=='U' ))  {
-            System.out.println("GAME OVER");
+            System.out.println("GAME OVER, SE COMIERON ENTRE TODOS");
             band = false;
         } else if ((aRio[0] == ' ' && aRio[1]=='L' && aRio[2]=='C')|| (dRio[0] == ' ' && dRio[1]=='L' && dRio[2]=='C')) {
             System.out.println("PERDISTE MANO, EL LOBO SE COMIO A LA CAPERUSITA");
@@ -90,4 +91,4 @@ public class Deber1Lobo {
         }
         sc.close();
     }
-}
+} 

@@ -242,3 +242,26 @@ Se genera la informacion en la Ram, ocupa un espacio de almacenamiento.
 To se puede mejorar :v  
 Operador ternario, consultar
 ~~~
+## Deber
+
+El archivo mandar con el nombre del correo
+
+Ya haaaaaaaaaaas :v
+
+En le terminal podemos correr el programa con 
+
+java src/ (Nombre de la carpeta)
+
+ctrl F5
+
+/* para documentar
+
+doble linea ctrl + D
+
+Seleccionar cogidos, clic derecho, refactorizar, extract metod, ingresarNombre, se crea un metodo
+
+% mood, residuo de las divisiones
+
+## Deber
+
+**
