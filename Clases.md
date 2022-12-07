@@ -262,6 +262,11 @@ Seleccionar cogidos, clic derecho, refactorizar, extract metod, ingresarNombre, 
 
 % mood, residuo de las divisiones
 
-## Deber
+## Clase 7/12/2022
 
-**
+Cast (int) i;
+
+Conversion int a = Integer.parse.Int("i");
+
+Yaaaaa haaaaaaaaaaaaaasssss :v
+
