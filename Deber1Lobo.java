@@ -39,10 +39,10 @@ public class Deber1Lobo {
      * @param dRio arrays de llegada
      */
     public static void cambioPosicion(char[] aRio, char[] dRio, int posicion) {
-        char temp2;
-        temp2 = aRio[posicion];
+        char temp;
+        temp = aRio[posicion];
         aRio[posicion] = dRio[posicion];
-        dRio[posicion] = temp2;
+        dRio[posicion] = temp;
     }
 
     /**
@@ -75,7 +75,7 @@ public class Deber1Lobo {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        char aRio[] = { 'O', 'L', 'C', 'U' }, dRio[] = { ' ', ' ', ' ', ' ' }; 
+        char aRio[] = { 'O', 'L', 'C', 'U' }, dRio[] = { ' ', ' ', ' ', ' ' };
         boolean bandera = true, bandera2 = true;
         System.out.println("Un observador debe pasar a un lobo, a caperusita y unas uvas al otro lado del rio");
         System.out.println("El lobo se come caperusita y caperusita a las uvas, Como pasa todo al otro lado?");
