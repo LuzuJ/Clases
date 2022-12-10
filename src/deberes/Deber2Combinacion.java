@@ -5,43 +5,48 @@ import java.util.Scanner;
 /**
  * @author Jonathan Luzuriaga
  * @date 09/12/2022
- *       Combinacion de letras
+ *       Combinacion de paComb
  */
 public class Deber2Combinacion {
-    static int count = 0;
+    //Crear un objeto
+    static int contador = 0;
+    /**
+     * 
+     * @param primero
+     * @param paComb
+     */
+    public static void combinaciones(String primero, String paComb) {
 
-    public static void combinaciones(String primero, String letras) {
-
-        if  (letras.length() == 2) {
-            count = count + 2;
-            System.out.println(primero + letras.charAt(1) + "" + letras.charAt(0));
-            System.out.println(primero + letras.charAt(0) + "" + letras.charAt(1));
+        if  (paComb.length() == 2) {
+            contador = contador + 2;
+            System.out.println(primero + paComb.charAt(1) + "" + paComb.charAt(0));
+            System.out.println(primero + paComb.charAt(0) + "" + paComb.charAt(1));
         } else {
-            for (int i = 0; i < letras.length(); i++) {
-                combinaciones(primero + letras.charAt(i), quitarLetra (letras, i));
+            for (int i = 0; i < paComb.length(); i++) {
+                combinaciones(primero + paComb.charAt(i), quitarLetra (paComb, i));
             }
         }
     }
 
-    public static String quitarLetra(String letras, int i) {
+    public static String quitarLetra(String paComb, int i) {
         if (i == 0) {
-            return letras.substring(i + 1, letras.length());
+            return paComb.substring(i + 1, paComb.length());
         } else {
-            if (i == letras.length()) {
-                return letras.substring(0, letras.length() - 1);
+            if (i == paComb.length()) {
+                return paComb.substring(0, paComb.length() - 1);
             } else {
-                return letras.substring(0, i) + letras.substring(i + 1, letras.length());
+                return paComb.substring(0, i) + paComb.substring(i + 1, paComb.length());
             }
         }
     }
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese que letras desea combinar");
-        String letras = sc.nextLine();
-        System.out.println("combinaciones de: " + letras);
-        combinaciones(" ", letras);
-        System.out.println("total: " + count);
+        System.out.println("Ingrese que letras o numeros desea combinar");
+        String paComb = sc.nextLine();
+        System.out.println("combinaciones de: " + paComb);
+        combinaciones("", paComb);
+        System.out.println("total: " + contador);
         sc.close();
     }
 
