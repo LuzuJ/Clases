@@ -83,7 +83,6 @@ public class Deber2Com {
         System.err.println("LE RECOMIENDO NO INGRESAR MAS DE G");
         System.out.println("Ingrese hasta que letras desea combinar: ");
         char letra = sc.nextLine().toLowerCase().charAt(0);
-        System.out.println("En grupos de cuantos desea juntar? ");
 
         ectraerLetras(posicion, letrasAbc, letra);
 
