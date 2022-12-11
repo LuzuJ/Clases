@@ -27,7 +27,7 @@ public class Deber2Com {
         }
 
         char[] letrasCorte = new char[posicion + 1];
-        for (int i = 0; i <=  posicion; i++) {
+        for (int i = 0; i <= posicion; i++) {
             letrasCorte[i] = letrasAbc[i];
         }
 
@@ -84,7 +84,6 @@ public class Deber2Com {
         System.out.println("Ingrese hasta que letras desea combinar: ");
         char letra = sc.nextLine().toLowerCase().charAt(0);
         System.out.println("En grupos de cuantos desea juntar? ");
-        //grupos = sc.nextInt();
 
         ectraerLetras(posicion, letrasAbc, letra);
 
