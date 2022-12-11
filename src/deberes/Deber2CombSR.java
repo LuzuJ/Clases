@@ -23,19 +23,17 @@ public class Deber2CombSR {
         contador = contador + 1;
         if (fijador == null) {
             fijador = new int[grupos];
-            
         }
 
         if (j < grupos) {
             for (int i = k; i < letrasAbc.length; i++) {
                 fijador[j] = i;
                 combinarCR(letrasAbc, grupos, fijador, letra, j + 1, k + 1);
-               
             }
 
         } else {
             System.out.println("");
-            for (int l = 0; l < letrasAbc.length; l++) {
+            for (int l = 0; l < grupos; l++) {
                 System.out.print(letrasAbc[fijador[l]]);
                
             }
