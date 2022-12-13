@@ -270,3 +270,4 @@ Conversion int a = Integer.parse.Int("i");
 
 Yaaaaa haaaaaaaaaaaaaasssss :v
 
+## Clase 13/12/2022
