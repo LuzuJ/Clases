@@ -2,7 +2,7 @@ public class MayorNum {
     public static void main(String[] args) {
         int a = 40, b = 10;
         int c = 5, d = 10;
-        int e = 10, f = 5, m;
+      //  int e = 10, f = 5;
         // Es mas estricto mas tiempo
         if (a == b) {
             System.out.println(a + " es igual a " + b); 
@@ -25,12 +25,7 @@ public class MayorNum {
             else 
                 System.out.println("El mayor es: " + d);
         }
-        // Menores lineas compacto
-        if (a > b) 
-            m = e;
-         else 
-            m = f;
-         // m = (e > b)? e:f
+        
          
     }
 }

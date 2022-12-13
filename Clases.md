@@ -270,4 +270,31 @@ Conversion int a = Integer.parse.Int("i");
 
 Yaaaaa haaaaaaaaaaaaaasssss :v
 
-## Clase 13/12/2022
+## Clase 13/13/2022
+
+**Herencias**
+
+Padre
+->Propiedades
+
+1) Nombre 
+2) Ocupacion
+3) Sexo
+
+->Acciones
+
+1) Presentarse
+2) Trabajar
+
+para HIJO
+
+Propiedad, Metodos -> Constructos
+1) 'new'
+2) Unica ejecucion
+3) Inicia valor de la clase
+4) Lleva el mismo nombre de la clase
+
+
+Sobre CARGA
+
+shift + alt, cortar
