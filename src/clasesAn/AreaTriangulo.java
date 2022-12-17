@@ -1,3 +1,4 @@
+package clasesAn;
 import java.util.Scanner;
 
 /**
