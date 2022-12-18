@@ -15,16 +15,16 @@ public class Calendario {
         String[][] calendar = new String[13][8];
         for (int f = 0; f < calendar.length; f++)
             for (int c = 0; c < calendar[f].length; c++)
-                calendar[f][c] = null;
+                calendar[f][c] = " ";
 
-        calendar[0][0] = null;
-        calendar[0][1]= "Lunes";
-        calendar[0][2]= "Martes";
-        calendar[0][3]= "Miercoles";
-        calendar[0][4]= "Jueves";
-        calendar[0][5]= "Viernes";
-        calendar[0][6]= "Sabado";
-        calendar[0][7]= "Domingo";
+        calendar[0][0]= " ";
+        calendar[0][1]= "Lun";
+        calendar[0][2]= "Mar";
+        calendar[0][3]= "Mie";
+        calendar[0][4]= "Jue";
+        calendar[0][5]= "Vie";
+        calendar[0][6]= "Sab";
+        calendar[0][7]= "Dom";
 
         calendar[1][0] = "5-6";
         calendar[2][0] = "6-7";
@@ -39,16 +39,16 @@ public class Calendario {
         calendar[11][0] = "17-18";
         calendar[12][0] = "18-19";
 
-        calendar[6][2] = actividad;
-        calendar[7][2]= horario;
-
        
-        
-        for (int f = 0; f < calendar.length; f++) {
-            for (int c = 0; c < calendar[f].length; c++)
-                System.out.print(" " + calendar[f][c]);
-            System.out.println(" ");
-        }
+        for (int x = 0; x < calendar.length; x++) {
+			System.out.print("|");
+			for (int y = 0; y < calendar[x].length; y++) {
+				System.out.print(calendar[x][y]);
+				if (y != calendar[x].length - 1)
+					System.out.print("\t");
+			}
+			System.out.println("|");
+		}
 //
     }
 }
