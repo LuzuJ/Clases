@@ -25,7 +25,7 @@ public class Cadena {
         }
 
         String nombre = "Pancracio";
-        System.out.println(String.format("%G5", nombre));
+        System.out.println(String.format("%.6s", nombre));
 
     }
 

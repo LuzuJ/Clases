@@ -15,7 +15,7 @@ public class Estudiante {
         this.codigo = codigo;
     }
 
-    public void sBhowMe(){
+    public void showMe(){
         System.out.println("codigo= " + codigo);
         System.out.println("nombre = " + nombre);
         System.out.println("depre = " + depre );
