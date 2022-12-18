@@ -1,24 +1,29 @@
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 
-import pkPoliEstudiante.Estudiante;
+//import pkPoliEstudiante.Estudiante;
+import pkPoliEstudiante.Calendario;
 
 //import pkHerencia.Hijo;
 //import pkHerencia.Padre; //Importar siempre las herencias
-import pkArreglo.Cadena;
+//import pkArreglo.Cadena;
 
 public class App {
 
     public static void main(String[] args) {
 
-        List<Estudiante> lsProg = new ArrayList<>();
 
+        Calendario e1 = new Calendario("Jugar", "11-12");
+        e1.showCalendar();
 
-        //Estudiante badBUnny = new Estudiante();
-        Estudiante poliEstu = new Estudiante(1, "PepaPig", false);
-        poliEstu.showMe();
-
-        lsProg.add(poliEstu);
+       // List<Estudiante> lsProg = new ArrayList<>();
+//
+//
+       // //Estudiante badBUnny = new Estudiante();
+       // Estudiante poliEstu = new Estudiante(1, "PepaPig", false);
+       // poliEstu.showMe();
+//
+       // lsProg.add(poliEstu);
 
 
 
@@ -45,7 +50,7 @@ public class App {
       //  Cadena c4 = new Cadena();
       //  Cadena c5 = new Cadena();
       //  Cadena c6 = new Cadena();
-      Cadena c7 = new Cadena();
+      //  Cadena c7 = new Cadena();
       //  
 //
       //  System.out.println(" ");
@@ -65,9 +70,9 @@ public class App {
 //
       //  System.out.println(" ");
       //  c6.showMatrizCharAnormal();
-//
-      System.out.println(" ");
-      c7.showListString();
+
+     // System.out.println(" ");
+     // c7.showListString();
 
     }
 }

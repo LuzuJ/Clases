@@ -1,12 +1,14 @@
 package pkArreglo;
+
 import java.util.List;
 import java.util.ArrayList;
 
 public class Cadena {
-    public void showListString(){
+
+    public void showListString() {
         List<String> listado = new ArrayList<>();
         List<Integer> numeros = new ArrayList<>();
-    
+
         listado.add("Pepe");
         listado.add("Ana");
         listado.add("Lucho");
@@ -29,16 +31,16 @@ public class Cadena {
 
     }
 
-    public void showMatrizCharAnormal(){
+    public void showMatrizCharAnormal() {
         char logo[][] = new char[5][5];
 
         System.out.println("cleaning...");
         for (int f = 0; f < logo.length; f++) {
             for (int c = 0; c < logo[f].length; c++)
-            if(c==f || ((c+f+1)==logo.length))
-                logo[f][c] = 'X';
-            else 
-                logo[f][c] = ' ';
+                if (c == f || ((c + f + 1) == logo.length))
+                    logo[f][c] = 'X';
+                else
+                    logo[f][c] = ' ';
         }
 
         System.out.println("draw char...");
@@ -51,11 +53,7 @@ public class Cadena {
 
     public void showMatrizIntAnormal() {
         int pares[][] = {
-                          {0, 1, 2}
-                         ,{1, 2, 3, 4}
-                         ,{2, 3, 4, 5 , 7}
-                         ,{3, 4, 5, 6}
-                         ,{4, 5, 6}
+                { 0, 1, 2 }, { 1, 2, 3, 4 }, { 2, 3, 4, 5, 7 }, { 3, 4, 5, 6 }, { 4, 5, 6 }
         };
 
         for (int f = 0; f < pares.length; f++) {
@@ -71,9 +69,8 @@ public class Cadena {
 
         System.out.println("Loading...");
         for (int f = 0; f < pares.length; f++)
-            for (int c = 0; c < pares[f].length; c++) 
+            for (int c = 0; c < pares[f].length; c++)
                 pares[f][c] = f + c;
-            
 
         for (int f = 0; f < pares.length; f++) {
             for (int c = 0; c < pares[f].length; c++)
