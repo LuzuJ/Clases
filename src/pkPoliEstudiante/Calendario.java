@@ -1,5 +1,7 @@
 package pkPoliEstudiante;
 
+//import java.util.Arrays;
+
 public class Calendario {
     private String actividad;
     private String horario;
@@ -10,7 +12,11 @@ public class Calendario {
     }
 
     public void showCalendar(){
-        String[][] calendar = new String[12][7];
+        String[][] calendar = new String[13][8];
+        for (int f = 0; f < calendar.length; f++)
+            for (int c = 0; c < calendar[f].length; c++)
+                calendar[f][c] = null;
+
         calendar[0][0] = null;
         calendar[0][1]= "Lunes";
         calendar[0][2]= "Martes";
@@ -36,15 +42,13 @@ public class Calendario {
         calendar[6][2] = actividad;
         calendar[7][2]= horario;
 
+       
+        
         for (int f = 0; f < calendar.length; f++) {
             for (int c = 0; c < calendar[f].length; c++)
-                if (calendar[f][c] != null) 
-                    System.out.print(calendar[f][c]);
-                else 
-                    System.out.println(calendar[f][c] == null);
-                
+                System.out.print(" " + calendar[f][c]);
             System.out.println(" ");
         }
-
+//
     }
 }
