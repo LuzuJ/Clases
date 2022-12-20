@@ -298,3 +298,6 @@ Propiedad, Metodos -> Constructos
 Sobre CARGA
 
 shift + alt, cortar
+
+Hoooolaaaaaaaaaaaa
+
