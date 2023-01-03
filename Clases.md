@@ -301,3 +301,46 @@ shift + alt, cortar
 
 Hoooolaaaaaaaaaaaa
 
+1.- numero infinito, Torre al cielo.
+2.- Comando markDown
+3.- Comando Git, ternarios
+4.-
+6.- Modelado , Herencias
+
+Prueba hasta esta semana
+
+Martes y Miercoles pruebas
+
+Jueves y Viernes revision proyecto
+
+include es el obligatorio, extended es opcional
+
+SIEMPRE SE LEE DE ABAJO HACIA ARRIBA
+
+puede ser?, debe ser? es?
+
+composicion flechas, listas, generalizaciones
+
+la de color siempre va, despartamento -> 1 casa -> Conjunto de casa
+
+La blanca no necesariamnete, abeja -> colmema
+
+interfaz, mejor que herencia
+
+interfa - Accion - Operacio
+
+Perosona - usuario, cliente
+Ainimal - ven
+
+Casa un comportamiento difetente
+
+Iterfas publico
+
+clases tivafs.
+
+UML + INTERFAZ
+
+USER INTERFACE UI
+
+JAVA FX render para diseñar
+

@@ -16,10 +16,12 @@ public class Calendario {
     public void showCalendar() {
 
         String[][] calendar = new String[12][7];
-        String[][] vacia = new String[12][7];
+        //String[][] vacia = new String[12][7];
         for (int f = 0; f < calendar.length; f++)
             for (int c = 0; c < calendar[f].length; c++)
                 calendar[f][c] = " ";
+
+
         calendar[0][0] = " ";
         calendar[0][1] = "Lun";
         calendar[0][2] = "Mar";
@@ -65,6 +67,7 @@ public class Calendario {
                 System.out.println("Ingrese Nuevamente");
                 break;
         }
+        
         switch (horario) {
             case "5-6":
                 posicion2 = 1;
@@ -106,6 +109,12 @@ public class Calendario {
                 System.out.println("Ingrese nuevamente");
                 break;
         }
+        
+        for (String[] strings : calendar) {
+            actividad = calendar[posicion][posicion2];
+        }
+        
+
         for (int x = 0; x < calendar.length; x++) {
             System.out.print("|");
             for (int y = 0; y < calendar[x].length; y++) {
