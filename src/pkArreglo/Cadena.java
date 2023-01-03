@@ -4,6 +4,56 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Cadena {
+    public void showArrayListx() {
+        // Declaración de un ArrayList de "String". Puede ser de cualquier otro Elemento
+        // u Objeto (float, Boolean, Object, ...)
+        ArrayList<String> nombreArrayList = new ArrayList<String>();
+
+        // Añade el elemento al ArrayList
+        nombreArrayList.add("Elemento 1");
+        nombreArrayList.add("Elemento 2");
+        // Añade el elemento al ArrayList en la posición 'n'
+        // nombreArrayList.add(1, null);
+        nombreArrayList.add(1, "Elemento 1.1");
+        // Devuelve el numero de elementos del ArrayList
+        nombreArrayList.size();
+
+        // Devuelve el elemento que esta en la posición '2' del ArrayList
+        nombreArrayList.get(2);
+
+        // Comprueba se existe del elemento ('Elemento') que se le pasa como parametro
+        nombreArrayList.contains("Elemento");
+        // Devuelve la posición de la primera ocurrencia ('Elemento') en el ArrayList
+        nombreArrayList.indexOf("Elemento");
+        // Devuelve la posición de la última ocurrencia ('Elemento') en el ArrayList
+        nombreArrayList.lastIndexOf("Elemento");
+        // Borra el elemento de la posición '5' del ArrayList
+        nombreArrayList.remove(5);
+        // Borra la primera ocurrencia del 'Elemento' que se le pasa como parametro.
+        nombreArrayList.remove("Elemento");
+        // Borra todos los elementos de ArrayList
+        nombreArrayList.clear();
+        // Devuelve True si el ArrayList esta vacio. Sino Devuelve False
+        nombreArrayList.isEmpty();
+
+        // Declaración el ArrayList
+        ArrayList<String> nombreArrayList = new ArrayList<String>();
+
+        // Añadimos 10 Elementos en el ArrayList
+        for (int i = 1; i <= 10; i++) {
+            nombreArrayList.add("Elemento " + i);
+        }
+
+        // Añadimos un nuevo elemento al ArrayList en la posición 2
+        nombreArrayList.add(2, "Elemento 3");
+        // Declaramos el Iterador e imprimimos los Elementos del ArrayList
+        Iterator<String> nombreIterator = nombreArrayList.iterator();
+        while (nombreIterator.hasNext()) {
+            String elemento = nombreIterator.next();
+            System.out.print(elemento + " / ");
+
+        }
+    }
 
     public void showListString() {
         List<String> listado = new ArrayList<>();
@@ -31,7 +81,7 @@ public class Cadena {
 
     }
 
-    public void showMatrizCharAnormal() {
+    public void showMatrizCharLogo() {
         char logo[][] = new char[5][5];
 
         System.out.println("cleaning...");
