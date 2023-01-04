@@ -289,7 +289,7 @@ Padre
 para HIJO
 
 Propiedad, Metodos -> Constructos
-1) 'new'
+1) "new"
 2) Unica ejecucion
 3) Inicia valor de la clase
 4) Lleva el mismo nombre de la clase
@@ -344,3 +344,22 @@ USER INTERFACE UI
 
 JAVA FX render para diseñar
 
+oidaflkadjflkajfkajf
+
+## Clase 04/01/23
+
+**Arquitectura de Software** **(N-Tire)**
+
+***CAPAS DE TRABAJO***
+
+Web/Desktop/Mobil -> Escenarios de trabajo
+
+Interfase  R1  R2  
+Logic Ruler -> D(m) --- D(f) {Ra = Rb}
+
+**DTO**: Extrae como un txt, o excel donde está la info  
+**DAC**: Extrae un paquete como Oracle que queda como objetos  
+
+Rest  
+Log  
+Datos  
