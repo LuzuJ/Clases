@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Menu{
++ void showMenu()
+-void showDatos()
+-Mascota setDatos()
++ void setMatch()
+}
+
+class Mascota{
+    -nombre:String
+    -tipo:String
+    -raza: String
+    -edad: String
+    -propietario: String
+    -observacion: String
+    -estadoMatch:Boolean
+    +Mascota()
+    +void showDatos()
+    +void setDatos()
+    +String getNombre()
+    +setEstadoMatch(estadoMatch)
+    +boolean isEstadoMatch(estadoMatch)
+
+}
+
+Menu --> Mascota
+
+
+
+@enduml

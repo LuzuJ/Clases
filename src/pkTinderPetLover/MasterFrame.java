@@ -10,7 +10,7 @@ Jpanel p;
 MasterFrame() {
 
     JFrame frm = new JFrame();
-        frm. setTitle("Principal");                               
+        frm.setTitle("Principal");                               
         frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         frm.setResizable(false);                                   
         frm.setSize(1000,500);                       
