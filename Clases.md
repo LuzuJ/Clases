@@ -1,4 +1,8 @@
-# **Semana 1**  
+# **SEMANA 1**  
+
+**IDE, Visual Code y GitHub**
+
+*GIT HUB*
 
 [REPOSITORIO](https://github.com/LuzuJ/Clases.git)
 
@@ -28,7 +32,8 @@ En caso de que no aparezca nuestro correo ni nuestro nombre de usuario, lo confi
 
 [Atajos de VS](https://learn.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
 ---  
-# **Segunda clase**
+
+## **MARKDOWN**
 
 Comandos necesarios para poder usar ***MarkDown***, que es algo parecido a usar **HTML**.  
 
@@ -160,19 +165,17 @@ Al usar caracteres especiales los podemos usar siempre y cuando se coloque una b
 Esto es un \*ejemplo con asteriscos\*
 
 ---  
-# **Tercera clase**
 
 [Git push xD](https://es.stackoverflow.com/questions/518780/problema-con-git-push-fatal-no-configured-push-destination)
 
-1.- Martes: Talleres, Numero infinito, torre al cielo.
-2.- Miercoles: Markdown  
-3.- Jueves: Git  
-4.- Viernes: Nube git
+# **SEMANA 2**
 
-# **Quinta clase**
+## *Conceptos basicos*
+
+El nombre del archivo debe ser EL MISMO que el nombre de la clase y en mayusculas  
 
 **Developer**: Creador del programa  
-*java*: Lenguaje de programacion   
+*java*: Lenguaje de programacion
 ***Copilador***: Analizador *sistactico* o *semantico*, interprete  
 
 virtual machine  -> bytecode  `.class`  
@@ -184,7 +187,7 @@ Paquetes
 Detalle global  
 
 1.- Metodos:  
-* Retornar valor "Funcion"  
+* Retornar valor "Funcion"   
 * No retorna valor "Procedimiento"  
 
 `Hola.java`  
@@ -192,13 +195,13 @@ Detalle global
 
 Estandar Codificado: Camelcase (nombreCompletoApellido)
 
-    
 
 **Parametro** *Propiedad/atributos* /ambito(Public, private, protect)/ /tipo de dato/ /nombre variable/  
 
 *variable* /tipo de datos/  
 /nombre de variable(1.- estandar camelcase, 2.- nombre asociado al negocio, 3.- declaracion)/;  
-~~~
+
+```
 /tipo dato>  
     String  (Primitivos)
     Bool  
@@ -207,13 +210,25 @@ Estandar Codificado: Camelcase (nombreCompletoApellido)
     bool  (orientada a objetos)  
     int  
     = /Valor/; 
-~~~
+    
+    public class XXXX{
+        public Integer edadUsuario = 21; // propiedad
+        public static void main(){
+            String nombreUsuario = "Luzuriaga"; // variable
+            String nombre; // ? declaración
+            nombre = "Jonathan" // ? inicialización
+   }   
+}
+```
 
-### Deber  
+## **Scanner**  
 
-Revisar tipos de datos orientada a objetos y ordinarios
-
-## Clase 6; Miercoles 23 
+```
+import java.util.Scanner;
+Scanner xxxx = new Scanner(System.in); // crear un objeto entrada
+int valor = xxxx.nextInt(); // usar en numeros
+string valor = xxxx.nextLine(); // usar en texto
+```
 
 **Algoritmia**  
 1.- Algoritmo:  
@@ -224,6 +239,10 @@ Revisar tipos de datos orientada a objetos y ordinarios
 * Trace -> Debug : Para saber si esta bien configurado, 
 las salidas del programa.  
 Se genera la informacion en la Ram, ocupa un espacio de almacenamiento.  
+
+# **SEMANA 3**
+
+## **POO**
 
 *Solucion*  
 2.- Problema
@@ -238,23 +257,11 @@ Se genera la informacion en la Ram, ocupa un espacio de almacenamiento.
 **2) ISSUE:** Tiene un defecto en el programa, no lo cierra pero lo hace ir mal.  
 **3) BUG:** Vulberabilidad, se aprovecha de los **ISSUE**     
 
-~~~
+```
 To se puede mejorar :v  
-Operador ternario, consultar
-~~~
-## Deber
+```
 
-El archivo mandar con el nombre del correo
-
-Ya haaaaaaaaaaas :v
-
-En le terminal podemos correr el programa con 
-
-java src/ (Nombre de la carpeta)
-
-ctrl F5
-
-/* para documentar
+ctrl F5 /* para documentar
 
 doble linea ctrl + D
 
@@ -262,104 +269,161 @@ Seleccionar cogidos, clic derecho, refactorizar, extract metod, ingresarNombre, 
 
 % mood, residuo de las divisiones
 
-## Clase 7/12/2022
+**Casteo de datos**
 
-Cast (int) i;
+Para poder convertir a diferente tipo de datos
 
+```
+Cast (int) i;  
 Conversion int a = Integer.parse.Int("i");
+```
 
-Yaaaaa haaaaaaaaaaaaaasssss :v
+Detalles:
+1. `public:` modificador de acceso
+2. `void :` valor de retorno (int, String,...)
+3. `metodo :` nombre del metodo
+4. `... :` argumentos que recive el metodo  
 
-## Clase 13/13/2022
+``` 
 
-**Herencias**
+*Metodos que no retornan*
+public void metodo(){
+   // Instrucciones
+}
+```
+## **SEMANA 5**
 
-Padre
+### **Herencias**
+
+**Nomenclatura** 
+Clase original = clase padre = Superclase
 ->Propiedades
 
-1) Nombre 
+1) Nombre
 2) Ocupacion
 3) Sexo
 
-->Acciones
+Clase secundaria = clase hijo = Subclase  
+->Acciones 
 
 1) Presentarse
 2) Trabajar
 
-para HIJO
-
 Propiedad, Metodos -> Constructos
-1) "new"
+
+**CONSTRUCTOR**
+
+1) `new`
 2) Unica ejecucion
 3) Inicia valor de la clase
 4) Lleva el mismo nombre de la clase
 
+Para pasar la herencia a los hijos usamos `EXTENDS nombreClaseHijo`
 
-Sobre CARGA
+**CONTRUCTOR CON PARAMETROS**
 
-shift + alt, cortar
+```
+public Padre(String nombre, String ocupacion, String sexo, int edad) {
+   this.nombre = nombre;
+   this.ocupacion = ocupacion;
+   this.sexo = sexo;
+   this.edad = edad;
+}
+```
+`this:` Referenciar variables dentro del CONSTRUCTOR de las clases.
 
-Hoooolaaaaaaaaaaaa
+`shift + alt, cortar` 
 
-1.- numero infinito, Torre al cielo.
-2.- Comando markDown
-3.- Comando Git, ternarios
-4.-
-6.- Modelado , Herencias
+### **NOTACION PARA AMBITOS**
 
-Prueba hasta esta semana
+* `+` public
+* `-`private
+* `~` paquete
+* `#` protect
 
-Martes y Miercoles pruebas
+### **NOTACION PARA METODOS**
 
-Jueves y Viernes revision proyecto
+* Mejorar el diseño
+* Permite la reutilización 
+* Facilita la extensión
+* *Problema:* acoplamiento
 
-include es el obligatorio, extended es opcional
+### **OBJETOS**
 
+La 'variable' es el objeto que tiene referencia a la memoria RAM
+
+```
+Vehiculo v = new Vehiculo();
+Coche c = new Coche();
+Barco b = new Barco();
+```
+
+<blockquote class="warning">En la SUBCLASE <br>Antes de que se ejecute el constructor </blockquote><br>
+
+## **SEMANA 6**
+
+### *MODELADO O:O UML*
+
+* `->` dirección del modelo
+
+### *COMPONENTES*
+
+* `uso`"______" bidirección "----->" linea de dirección
+* `inclusión` "-----" encima de la barra lleva *include*, describir el programa
+* `extension` "---->" encima de la barra *extende*, que deoende de algo (más opciones para el usuario ejemplo un cliente puede pagar de diferenc).
+* `Generalizaciones` "-->" sirve para clasificar dato.
+
+*exclude:* va en dirección de la clase que la contiene, generalmente se usa entre caso de uso.
+*include:* va en sentido de elemento opcional
+
+## **SEMANA 7**
+
+### **INTERFAZ** 
+
+| PROPIEDAD | CLASES | INTERFAZ |
+|-----------|--------|----------|
+|Propiedades| SI     | NO       |
+|Metodos    | Metodos concretos heredados del padre | No tiene métodos concretos|
+|Caracteristicas| Todos los hijos tienen  los mismos metodos | Cada hijo hereda los metodos y PUEDE CONTROLAR el comportamiento de cada método.|
+|UML| SE ESTIENDE | SE IMPLEMENTA|
+
+## **ARQUITECTURA DE SOFTWARE (N-Tire)**
+
+### *Estructura de capas*
+
+include es el obligatorio, extended es opcional  
 SIEMPRE SE LEE DE ABAJO HACIA ARRIBA
+
+### ***Preguntas que se debe hacer***  
 
 puede ser?, debe ser? es?
 
-composicion flechas, listas, generalizaciones
+composicion flechas, listas, generalizaciones   
+la de color siempre va, despartamento -> 1 casa -> Conjunto de casa   
+La blanca no necesariamnete, abeja -> colmema   
+interfaz, mejor que herencia   
+interfa - Accion - Operacio   
+Perosona - usuario, cliente Ainimal   
 
-la de color siempre va, despartamento -> 1 casa -> Conjunto de casa
+clases tivafs.   
+UML + INTERFAZ   
+USER INTERFACE UI   
+**JAVA FX** render para diseñar
 
-La blanca no necesariamnete, abeja -> colmema
+### **CAPAS**
 
-interfaz, mejor que herencia
-
-interfa - Accion - Operacio
-
-Perosona - usuario, cliente
-Ainimal - ven
-
-Casa un comportamiento difetente
-
-Iterfas publico
-
-clases tivafs.
-
-UML + INTERFAZ
-
-USER INTERFACE UI
-
-JAVA FX render para diseñar
-
-oidaflkadjflkajfkajf
-
-## Clase 04/01/23
-
-**Arquitectura de Software** **(N-Tire)**
-
-***CAPAS DE TRABAJO***
+* PRESENTACION - GUI
+* APLICACIÓN - código
+* DATOS - persistencia de datos
 
 Web/Desktop/Mobil -> Escenarios de trabajo
 
-Interfase  R1  R2  
+Interfase R1 R2
 Logic Ruler -> D(m) --- D(f) {Ra = Rb}
 
-**DTO**: Extrae como un txt, o excel donde está la info  
-**DAC**: Extrae un paquete como Oracle que queda como objetos  
+DTO: Extrae como un txt, o excel donde está la info
+DAC: Extrae un paquete como Oracle que queda como objetos
 
-Rest  
-Log  
+Rest
+Log
 Datos  
