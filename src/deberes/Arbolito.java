@@ -5,7 +5,7 @@ public class Arbolito {
         String result = null;
         int[] ints = { 1, 3, 5, 3, 5, 7, 3, 5, 7, 11, 3, 3, 3 };
         String asterisco = " * ";
-        System.out.println("Árbol de Navidad:");
+        System.out.println("ï¿½rbol de Navidad:");
         for (int i = 0; i < ints.length; i++) {
             result = "";
             for (int j = 0; j < 20 - asterisco.length() * (ints[i] / 2); j++) {

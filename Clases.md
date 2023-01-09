@@ -1,4 +1,4 @@
-# **Primera clase**  
+# **Semana 1**  
 
 [REPOSITORIO](https://github.com/LuzuJ/Clases.git)
 
