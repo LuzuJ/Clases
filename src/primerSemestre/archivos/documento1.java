@@ -1,0 +1,19 @@
+{1,2,3,4,5}
+Hola, esta es la primera impresion dentro de mi archivo
+Este es un archivo de texto que contiene nombres 
+Esta es mi segunda linea de impresion
+15
+Una ecuación diferencial es una ecuación matemática que relaciona una función con sus derivadas. En las matemáticas aplicadas, las funciones usualmente representan cantidades físicas, las derivadas representan sus razones de cambio, y la ecuación define la relación entre ellas.
+cTexto anadidoTexto 2 anadido
+Linea 0
+Linea 1
+Linea 2
+Linea 3
+Linea 4
+Linea 5
+Linea 6
+Linea 7
+Linea 8
+Linea 9
+Jonathan
+Luzuriaga
