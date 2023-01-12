@@ -1,8 +1,54 @@
 # **SEMANA 1**  
 
-**IDE, Visual Code y GitHub**
+## *Convivencia*
 
-*GIT HUB*
+***Numero infinito :*** Mediante grupos de 9, cada persona se coloco un número en el pecho, por consiguiente nos levantamos y el profesor decia un numero y cada integrante debia colocarse en la posición correcta y el grupo que se colocaba más rapido conseguia más puntos y ganaba  
+***Torre al cielo :*** Con los grupos de proyecto y usando materiales como: besitos y fideos se debia llegar a la torre más alta con el menor número de materiales y el que lo lograba ganaba.
+
+## **IDE, Visual Code y GitHub**
+
+## **Visual Studio Code**
+
+* Entorno de desarrollo estandarizado
+* Independencia de plataformas / SO
+* Mejor rendimiento
+* Personalización
+    1) JDK
+    2) Extension Pack for Java
+    3) Project Manager for Java
+    4) Makefile Tools
+    5) Markdown PDF
+    6) markdownlint
+    7) Draw.io Integration
+    8) Draw.io Preview
+    9) Más que se inetengren a los gustos
+
+## **ATAJOS DEL VISUAL STUDIO CODE**
+
+1. Command Palette  
+    **Windows:** CTRL+SHIFT+P
+2. Quick Open  
+    **Windows:** CTRL+P
+3. Toggle Sidebar  
+    **Windows:** CTRL+B
+4. Multi-Selector Cursor  
+    **Windows:** CTRL+D
+5. Copy Line  
+    **Windows:** CTRL+ALT+UO or SHIFT+ALT+DOWN
+6. Comment Code BLock  
+    **Windows:** SHIFT+ALT+A(M.line) or CTRL+K+C(S.line)
+7. Go back/ move forward  
+    **Windows:** ALT+_> or +->
+8. Show All Symbols  
+    **Windows:** Ctrl+T
+9. Tigger suggestion and Trigger parameter hints  
+    **Windows:** Ctrl+SPACE, Ctrl+Shift+Space
+
+![Atajos VS](https://learn.microsoft.com/es-es/visualstudio/ide/media/default-keyboard-shortcuts-in-visual-studio/visual-studio-keyboard-shortcut-cheatsheet.png?view=vs-2022)
+
+[Atajos de VS](https://learn.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
+
+## *GIT HUB*
 
 [REPOSITORIO](https://github.com/LuzuJ/Clases.git)
 
@@ -26,18 +72,11 @@ En caso de que no aparezca nuestro correo ni nuestro nombre de usuario, lo confi
 
 `git config --global user.name 'nuestro usuario'` o `git config --global user.email 'nuestro email'`
 
-## **ATAJOS DEL VISUAL STUDIO CODE**
-
-![Atajos VS](https://learn.microsoft.com/es-es/visualstudio/ide/media/default-keyboard-shortcuts-in-visual-studio/visual-studio-keyboard-shortcut-cheatsheet.png?view=vs-2022)
-
-[Atajos de VS](https://learn.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
----  
-
 ## **MARKDOWN**
 
 Comandos necesarios para poder usar ***MarkDown***, que es algo parecido a usar **HTML**.  
 
-## **Encabezados**  
+### **Encabezados**  
 
 Los *encabezados* dependeran del numero de '#' que se coloque delante de cada palabra, siguiendo la misma logica, solo usaremos el # una vez para ser el titulo general del documento
 
@@ -48,7 +87,7 @@ Los *encabezados* dependeran del numero de '#' que se coloque delante de cada pa
 `##### Encambezado 5`  
 `###### Encambezado 6`
 
-## **TEXTO Y PARRAFOS**  
+### **TEXTO Y PARRAFOS**  
 
 En el caso de usar **texto** o **parrafos** al colocar dos espacios despues del punto final, automaticamnete se colocara la siguiente línea como un codigo aparte.
 
@@ -57,7 +96,7 @@ Texto normal
 Texto con 2 espacios al final.  
 Texto normal
 
-## **VIÑETAS Y LISTAS**
+### **VIÑETAS Y LISTAS**
 
 Usando viñetas y listas numeradas usaremos.
 
@@ -84,7 +123,7 @@ Si queremos cambiar el formato del 1, solo cambiamos ".-" por ")", respectivamen
 [ ] A  
 [X] B  
 [ ] C  
-## **Formato**  
+### **Formato**  
 
 Para colocar el texto en cursiva usaremos * antes y después del texto 
 
@@ -98,15 +137,15 @@ Para colocar ambas usaremos *** antes y depués del trxto
 
 ***combinacion***
 
-## **Color**
+### **Color**
 
 <span style="color:blue"> Texto *rojo cursiva* normal</span>  
 
-## **Tachado**
+### **Tachado**
 
 ~~tachado~~
 
-## **Enlaces e imágenes**
+### **Enlaces e imágenes**
 
 <https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html>   
 o  
@@ -122,7 +161,7 @@ Tambien se pueden colocar los enlaces como anexos
 
 [Guia MarkDown](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/tutorial-de-markdown/#:~:text=Al%20igual%20que%20los%20hiperv%C3%ADnculos,a%20la%20imagen%20entre%20par%C3%A9ntesis.)
 
-## **Codigo**
+### **Codigo**
 
 Usaremos el llamado *acento grave* para poder resaltar un código, recordar que no son comillas simples
 
@@ -130,7 +169,7 @@ Esto es `codigo` recordar que es **alt + 96**
 
 Si acento grave tambien puede aparecer varias veces ``Todo esto es `codigo`.``
 
-## **Cuadro de codigo**
+### **Cuadro de codigo**
 
 Usaremos un **tab** o **4 espacios en blanco**
 
@@ -149,7 +188,7 @@ Así mismo se puede usar 3 acentos para crear el bloque de código al principio 
 </html>
 ```
 
-## **TABLAS**
+### **TABLAS**
 
 Para poder dibujar tablas usaremos plecas (|) para delimitar las tablas.
 
@@ -158,7 +197,7 @@ Para poder dibujar tablas usaremos plecas (|) para delimitar las tablas.
 |    A    |     B   |
 |    C    |     D   |
 
-## **Enmascaramineto con barra invertida**
+### **Enmascaramineto con barra invertida**
 
 Al usar caracteres especiales los podemos usar siempre y cuando se coloque una barra invertida "\" *alt + 92* antes del caracter
 
@@ -168,14 +207,18 @@ Esto es un \*ejemplo con asteriscos\*
 
 [Git push xD](https://es.stackoverflow.com/questions/518780/problema-con-git-push-fatal-no-configured-push-destination)
 
-# **SEMANA 2**
-
 ## *Conceptos basicos*
 
 El nombre del archivo debe ser EL MISMO que el nombre de la clase y en mayusculas  
 
+1. **Código:** Escrito por los programadores
+2. **Compilación:** Esta compilación devuelve un Bytcode
+3. **Bytecode:** Son instrucciones oara la java Virtual Machine
+4. **JVM:** La java Virual Machine interpreta el bytecode
+5. **Multiplataforma:** Se ejecuta en diferentes sistemas operaticos
+
 **Developer**: Creador del programa  
-*java*: Lenguaje de programacion
+**java**: Lenguaje de programacion
 ***Copilador***: Analizador *sistactico* o *semantico*, interprete  
 
 virtual machine  -> bytecode  `.class`  
@@ -186,15 +229,11 @@ Mac "Multiplataforma"
 Paquetes  
 Detalle global  
 
-1.- Metodos:  
-* Retornar valor "Funcion"   
-* No retorna valor "Procedimiento"  
+# **SEMANA 2**
 
-`Hola.java`  
- ## *Ejm en Hola.java*
+`Hola.java`, ejemplo
 
 Estandar Codificado: Camelcase (nombreCompletoApellido)
-
 
 **Parametro** *Propiedad/atributos* /ambito(Public, private, protect)/ /tipo de dato/ /nombre variable/  
 
@@ -221,7 +260,17 @@ Estandar Codificado: Camelcase (nombreCompletoApellido)
 }
 ```
 
-## **Scanner**  
+``` 
+<Control de flujo>
+    if - else
+    for(n)
+    while(<> !=)
+    do(<> != ==)
+    beak
+    switch
+
+```
+### **Scanner**
 
 ```
 import java.util.Scanner;
@@ -230,22 +279,113 @@ int valor = xxxx.nextInt(); // usar en numeros
 string valor = xxxx.nextLine(); // usar en texto
 ```
 
-**Algoritmia**  
+### **Algoritmia**
+
 1.- Algoritmo:  
 
 * Pseudocodigo  
-* Diadramas de flujo -> figuritas   
-* Code (Java)  
-* Trace -> Debug : Para saber si esta bien configurado, 
-las salidas del programa.  
-Se genera la informacion en la Ram, ocupa un espacio de almacenamiento.  
+* Diadramas de flujo -> figuritas
+* Codigo (debugging)  
+* Traza(trace) -> Debug : Para saber si esta bien configurado, las salidas del programa.  
+Se genera la informacion en la Ram, ocupa un espacio de almacenamiento. 
+
+```
+Pseudocódigo
+
+    imprimir  "Itroduzca una longitud en metros"
+    leer longuitud
+    imprimir "introduzca una anchura en metros"
+    leer ancho
+    asignar a areaRectangulo = largo * ancho
+    imprimir "El área es de " areaRectangulo "metros cuadrados"
+```
+
+```
+Mayor de 3 numeros
+    imprimir "Ingrese el 1er valor: "
+    leer a
+    imprimir "Ingrese el 2do valor: "
+    leer b
+    imprimir "Ingrese el 3er valor: "
+    leer c
+
+    Si (a>b) y (a>c)
+    imprimir "el mayor valor es: " a
+    salir
+    Si (b>a) y (b>c)
+    imprimir "el mayor valor es: " b
+    Si (c>a) y (c>b)
+    imprimir "el mayor valor es: " c
+```
 
 # **SEMANA 3**
 
-## **POO**
+Detalles:
+1. `public:` modificador de acceso
+2. `void :` valor de retorno (int, String,...)
+3. `metodo :` nombre del metodo
+4. `... :` argumentos que recive el metodo
 
-*Solucion*  
-2.- Problema
+***Metodos:*** Funciones que no retornan un valor  y no necesitan metodos   
+ ```
+Public/Private/Protected void NombreMetodo(){...}
+```
+
+***Metodos con parámetros:*** Funciones que necesitan parametros pero no retonan valores  
+```
+Public/Private/Protected void NombreMetodo (para1, para2, ...) {...}
+para1 = <TipoDato>NombreParametro
+```
+
+***Metodo con retorno:*** Funcion que retorna un valor sin parametros  
+```
+Public/Private/Protected <TipoDato> NombreMetodo () 
+{... return <TipoDato>}
+```
+
+***Metodo con retorno y parametros:*** Funcion que retorna un valor con parametros
+```
+Public/Private/Protected <TipoDato> NombreMetodo (para1 , param2,...) 
+{... return <TipoDato>}
+```
+
+### **Variables Primitivas**
+
+    int, long(tipos enteros)
+    float, double(tipos de punto flotante)
+    char (tipo caracter)
+
+### **Variables de referencia**  
+
+    String name = "Alog aqui"
+    Calendar fechaNAc;
+
+### **String**
+
+    charAt(index)    //Obtener un caracter
+    Lenght           //Obtener la longitud del String
+    Equals           //comparacion
+    equalsIgnoreCase //Ignorar si es mayusculas o minusculas
+
+### **Scanner**
+
+    nexInt()        Se salta los espacios dejados en blanco hasta que encuentre un valor de tipo int
+    nextLong()      Se salta los espacios dejados en blanco hasta que encuentre un valor de tipo long
+    nextFloat()     Se salta los espacios dejados en blanco hasta que encuentre un valor de tipo float
+    nextDouble()    Se salta los espacios dejados en blanco hasta que encuentre un valor de tipo double
+    next()          Se salta los espacios dejados en blanco hasta que encuentre un valor de tipo String
+
+### **Arrays**
+
+Caracteres + cadena de caracteres: String / Array / vector
+
+    char letra = 'a';                           //1 2 3 q ' # * 
+    chat caracter = '1';                        // --> |1| (8bit = 1 byte) --> |0|0|0|1|1|1|
+    char palabra[10] = "HOLA";                  // |H|O|L|A|||||||||| --> vector
+    char palabras[] = "Como estas pepe...";
+    String palabras; -> palabras[]
+
+## **POO**
 
 **1)ERROR:**  
 1.- Logico: Division entre 0  
@@ -255,7 +395,7 @@ Se genera la informacion en la Ram, ocupa un espacio de almacenamiento.
 * Semantico 
 
 **2) ISSUE:** Tiene un defecto en el programa, no lo cierra pero lo hace ir mal.  
-**3) BUG:** Vulberabilidad, se aprovecha de los **ISSUE**     
+**3) BUG:** Vulberabilidad, se aprovecha de los **ISSUE**  
 
 ```
 To se puede mejorar :v  
@@ -278,24 +418,43 @@ Cast (int) i;
 Conversion int a = Integer.parse.Int("i");
 ```
 
-Detalles:
-1. `public:` modificador de acceso
-2. `void :` valor de retorno (int, String,...)
-3. `metodo :` nombre del metodo
-4. `... :` argumentos que recive el metodo  
+# **SEMANA 5**
 
-``` 
+## **Herencias**
 
-*Metodos que no retornan*
-public void metodo(){
-   // Instrucciones
-}
-```
-## **SEMANA 5**
+***Todos los*** coches ***son*** vehiculos  
+Las herencias es un mecanismo por el que se pueden crear nuevas clases a partir de otras existenetes  
+* heredado y posiblemente modificado, y/o añadiendo operaciones
+* heredado y posiblemente añadiendo atributos
 
-### **Herencias**
+|clase original|superclase|padre |vehiculo|
+|--------------|----------|------|--------|
+|clase extendida|subclase|hijo|coche|
 
-**Nomenclatura** 
+La *herencia* tambien se denomina ***Extension*** o ***Generalizacion***
+
+Al exytender una clase
+* se **hereda** todas las clases del padre  
+* se puede **añadir** nuevas operaciones
+
+La subclase puede elegir para las operaciones heredadas: 
+* **redefinir** la operacion: se vuelve a escribir
+    - pueden usar cosas del padre y hacer mas cosas o ser totalmente diferentes
+* o no hacer nada y heredarla como tal del padre
+
+### **Nomenclatura**
+
+- Procedimientos -> void ABC(<params>) {code}
+- Funciones      -> <TipoDato> ABC(<params>) {code ...; reutn <TipoDato>}
+- Variables globales y locales
+- Struct
+- Librerias      -> *.h
+- evento
+
+    + publico
+    - Privado
+    ~ protegido
+
 Clase original = clase padre = Superclase
 ->Propiedades
 
@@ -311,16 +470,20 @@ Clase secundaria = clase hijo = Subclase
 
 Propiedad, Metodos -> Constructos
 
-**CONSTRUCTOR**
+### **CONSTRUCTOR**
 
 1) `new`
 2) Unica ejecucion
 3) Inicia valor de la clase
 4) Lleva el mismo nombre de la clase
 
+```
+Vehiculo v = new Vehiculo();
+```
+
 Para pasar la herencia a los hijos usamos `EXTENDS nombreClaseHijo`
 
-**CONTRUCTOR CON PARAMETROS**
+### **CONTRUCTOR CON PARAMETROS**
 
 ```
 public Padre(String nombre, String ocupacion, String sexo, int edad) {
@@ -330,16 +493,17 @@ public Padre(String nombre, String ocupacion, String sexo, int edad) {
    this.edad = edad;
 }
 ```
+
 `this:` Referenciar variables dentro del CONSTRUCTOR de las clases.
 
 `shift + alt, cortar` 
 
 ### **NOTACION PARA AMBITOS**
 
-* `+` public
-* `-`private
+* `+` **public:** accesible desde el paquete
+* `-`**private:** accesible solo desde esa clase
 * `~` paquete
-* `#` protect
+* `#` **protect:** accesible desde sus subclases y, en jaca, desde cualquier clase en el mismo paquete
 
 ### **NOTACION PARA METODOS**
 
@@ -358,6 +522,30 @@ Coche c = new Coche();
 Barco b = new Barco();
 ```
 
+### **SubClase**
+
+```
+Clase: 
+    public int numSerie() {...}
+    public color color() {...}
+    public void pinta(Color c) {...}
+
+    @Override
+    public String toString(){
+        return "Vehiculo -> numSerie = " + numSerie + ", color = "  + color; 
+    }
+
+Subclase:
+    public class Coche extends Vehiculo{
+        private int cilindrada
+        //construye un coche
+        public Coche(Color color, int numSerie, int cilindrada){
+            super(color, numSerie);
+            this.cilindrada = cilindrada:
+        }
+    }
+```
+
 <blockquote class="warning">En la SUBCLASE <br>Antes de que se ejecute el constructor </blockquote><br>
 
 ## **SEMANA 6**
@@ -368,6 +556,8 @@ Barco b = new Barco();
 
 ### *COMPONENTES*
 
+**EJEMPLOS EN LOS ESQUEMAS**
+
 * `uso`"______" bidirección "----->" linea de dirección
 * `inclusión` "-----" encima de la barra lleva *include*, describir el programa
 * `extension` "---->" encima de la barra *extende*, que deoende de algo (más opciones para el usuario ejemplo un cliente puede pagar de diferenc).
@@ -376,9 +566,25 @@ Barco b = new Barco();
 *exclude:* va en dirección de la clase que la contiene, generalmente se usa entre caso de uso.
 *include:* va en sentido de elemento opcional
 
-## **SEMANA 7**
+### **Especificacion**
 
-### **INTERFAZ** 
+* Nombre
+* Actores
+* Extensiones
+* Pre condicion
+* Espacio principal
+    * Paso 1..n
+* Post condicion
+* Escenarios alternativos
+
+**Pre condiciones:** establece lo que siempre debe cumplirse antes de comenzar un caso de uso
+**Post condiciones:** establece que se debe cumplirse cuando el caso de uso se completa con exito
+
+# **SEMANA 7**
+
+## **INTERFAZ - Fachada**
+
+Nos permite especificar un conjunto de operaciones en clase que pueden ser utilizados por otras
 
 | PROPIEDAD | CLASES | INTERFAZ |
 |-----------|--------|----------|
@@ -386,6 +592,22 @@ Barco b = new Barco();
 |Metodos    | Metodos concretos heredados del padre | No tiene métodos concretos|
 |Caracteristicas| Todos los hijos tienen  los mismos metodos | Cada hijo hereda los metodos y PUEDE CONTROLAR el comportamiento de cada método.|
 |UML| SE ESTIENDE | SE IMPLEMENTA|
+
+
+### **UML**
+
+- POO                   -> paradigma de programación
+- clase                 -> template (propiedad/atributo, métodos, mensajes/eventos)
+- objeto                -> instancia de una clase
+    * un conjunto de datos relacionados que identifican el estado actual del objeto
+    * un conjunto de comportamientos = métodos.
+- constructores         -> método que se ejecuta 1 vez en la instancia de la clase
+- accesibilidad         -> private, protected, public
+- encapsulamiento       -> métodos/clase + accesibilidad
+- instancia             -> crear objetos (new)
+- Sobrecarga            -> si 2 o + métodos en la misma clase que utilizan el mismo nombre pero con distintos parámetros o tipos de parámetros/datos
+- Herencia              -> relación de jerarquía
+- Instancia
 
 ## **ARQUITECTURA DE SOFTWARE (N-Tire)**
 
@@ -398,16 +620,16 @@ SIEMPRE SE LEE DE ABAJO HACIA ARRIBA
 
 puede ser?, debe ser? es?
 
-composicion flechas, listas, generalizaciones   
-la de color siempre va, despartamento -> 1 casa -> Conjunto de casa   
-La blanca no necesariamnete, abeja -> colmema   
-interfaz, mejor que herencia   
-interfa - Accion - Operacio   
-Perosona - usuario, cliente Ainimal   
+composicion flechas, listas, generalizaciones  
+la de color siempre va, despartamento -> 1 casa -> Conjunto de casa  
+La blanca no necesariamnete, abeja -> colmema  
+interfaz, mejor que herencia  
+interfa - Accion - Operacio  
+Perosona - usuario, cliente Ainimal
 
-clases tivafs.   
-UML + INTERFAZ   
-USER INTERFACE UI   
+clases tivafs.  
+UML + INTERFAZ  
+USER INTERFACE UI  
 **JAVA FX** render para diseñar
 
 ### **CAPAS**
@@ -426,4 +648,4 @@ DAC: Extrae un paquete como Oracle que queda como objetos
 
 Rest
 Log
-Datos  
+Datos
