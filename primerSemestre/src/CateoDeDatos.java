@@ -5,10 +5,10 @@ public class CateoDeDatos {
 	/*
 	 * Conceptos; Castear: Es convertir (Ampliar o reducir) el espacio de memoria
 	 * para una varibale determinada en un punto determinado del programa. La idea
-	 * detras de un casteo, es optimizar el uso de recursos, para la presentación de
+	 * detras de un casteo, es optimizar el uso de recursos, para la presentaciï¿½n de
 	 * resultados de mejor manera. Enteros-> 32 bits //Solo almacena la parte entera
 	 * Flotantes -> 32 bits //Un calculo para parte entera y parte decimal Doubles
-	 * -> 64 bits // Representación de un decimal
+	 * -> 64 bits // Representaciï¿½n de un decimal
 	 * 
 	 * Identacion: Son los espacios desde el origen de la linea de codigo hasta la
 	 * primera letra, esto es importante para poder reconocer bloques de codigo que
@@ -64,7 +64,7 @@ public class CateoDeDatos {
 		System.out.println(ent1);
 		resultadoDoble = (double) ent1 / (double) ent2; // Representa que solo en esta linea pasaran a cambiar
 		System.out.println(ent1); // El entero solo afecto a la linea de arriba no a este
-		System.out.println((double) ent1);// Si se castea si cambiará
+		System.out.println((double) ent1);// Si se castea si cambiarï¿½
 		System.out.println("El resultado doble del casteo es: " + resultadoDoble); // 3.3333333333333333335
 		/*
 		 * Los casteos al igual que cualquier otra operacion dentro de JAVA y todos los
@@ -84,7 +84,7 @@ public class CateoDeDatos {
 		/*
 		 * Recuerde qie a pesar de tener el mismo espacio de memoria, la distribucio de
 		 * la parte entera y decimal es diferente. Por lo tanto, no se puede construir
-		 * el resultado en base de esta configuaración. resultadoEntero = (float)ent1 /
+		 * el resultado en base de esta configuaraciï¿½n. resultadoEntero = (float)ent1 /
 		 * (float)ent2; //No se puede tienen 32 bits para cada parte
 		 */
 		System.out.println("*************************************");
