@@ -38,18 +38,19 @@ public class principal {
 //
        System.out.println();
 
-       //Creamos objetos con referencias a la clase fecha
-       fecha f1 = new fecha();
-       f1.setDia(24);
-       f1.setMes("junio");
-       f1.setAño(2023);
-       System.out.println("dia: " + f1.getDia());
-       System.out.println("mes: " + f1.getMes());
-       System.out.println("año: " + f1.getAño());
+       //---------------FECHA-----
+      // //Creamos objetos con referencias a la clase fecha
+      // fecha f1 = new fecha();
+      // f1.setDia(24);
+      // f1.setMes("junio");
+      // f1.setAño(2023);
+      // System.out.println("dia: " + f1.getDia());
+      // System.out.println("mes: " + f1.getMes());
+      // System.out.println("año: " + f1.getAño());
 
 
-
-
-
+      //Vamos con herencias, Padre (super clase), hijo(subclase)
+      //para reutilizar el codigo.
     }
+
 }
