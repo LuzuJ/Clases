@@ -1,4 +1,4 @@
-package curso;
+package curso.src;
 
 public class auto {
     // creamos un metodo de acceso, un comportamiento

@@ -1,4 +1,4 @@
-package curso;
+package curso.src;
 //Esta es una clase perro pero no se puede ejecutar por que solo es una clase
 public class perro {
     //Atributos de la clase, que necesita el objeto

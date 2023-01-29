@@ -1,4 +1,4 @@
-package curso;
+package curso.src;
 //Los metodos GETTER(obtener datos) y SETTER(asignar datos) se usan para 
 // crear, modificar, eliminar y ver los valores de las variables
 public class fecha {

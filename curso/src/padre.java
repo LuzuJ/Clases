@@ -1,4 +1,4 @@
-package curso;
+package curso.src;
 
 //quitamos el publico por que aqui son datos muy privados
 class padre {
@@ -8,7 +8,6 @@ class padre {
     public void saludo(){
         System.out.println("Buenos dias gente........");
     }
-
 }
 
 //estructura de la herencia, para poder heredar todo de padre lo extiende
@@ -19,6 +18,8 @@ class hijo extends padre{
         hijo nuevo_hijo = new hijo();
         nuevo_hijo.saludo();
         System.out.println("tu hijo: " + nuevo_hijo.nombre_hijo);
+        System.out.println("tu padre: " + nuevo_hijo.nombre);
+        
     }
 
 }

@@ -1,4 +1,4 @@
-package curso;
+package curso.src;
 
 public class alumno {
    // //Modificadores de acceso
