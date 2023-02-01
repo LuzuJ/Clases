@@ -85,7 +85,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        //Configuracion de propiedades de la aplicación
+        //Configuracion de propiedades de la aplicaciï¿½n
         AppConfiguration.load("src/config.properties"); 
         System.out.println(AppConfiguration.getDBName());
         System.out.println(AppConfiguration.getDBPathConnection());
