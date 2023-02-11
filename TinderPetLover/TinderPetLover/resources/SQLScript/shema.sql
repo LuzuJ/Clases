@@ -22,6 +22,10 @@ DELETE  --> borrar
 
 .tables
 
+-- PRAGMA foreign_keys = 1;
+-- PRAGMA defer_foreign_keys = ON;
+-- PRAGMA table_info(LOCALIDAD);
+
 DROP TABLE PERSONA;
 DROP TABLE MascotaTipo;
 

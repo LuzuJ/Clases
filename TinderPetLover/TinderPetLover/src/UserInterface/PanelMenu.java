@@ -1,13 +1,9 @@
 package UserInterface;
 
-
-import java.awt.Color;
 import java.awt.event.*;
 import java.awt.GridLayout;
-
 import javax.swing.JButton;
 import javax.swing.JPanel;
-
 import UserInterface.CustomerControl.PatButtonMenu;
 
 public class PanelMenu extends JPanel implements ActionListener{

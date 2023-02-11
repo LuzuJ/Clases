@@ -6,13 +6,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import Framework.APP;
-import Framework.AppConfiguration;
 import Framework.AppException;
 
 public class PetDAC extends SQLiteDataHelper {
 
-    public PetDAC() {
-        super(AppConfiguration.getDBPathConnection());
+    public PetDAC() throws AppException {
+        super(APP.getProperty (APP.GLOBAL.KEY_DB_FULLPATH));
     }
     public ResultSet getAllPet() throws AppException{
         try {

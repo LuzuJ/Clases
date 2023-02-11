@@ -1,10 +1,7 @@
 import java.awt.BorderLayout;
 
 import java.awt.event.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
-import java.util.stream.Stream;
+import java.io.IOException;
 
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -22,10 +19,9 @@ import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 
 import BusinessLogic.PetBL;
-import BusinessLogic.SexoBL;
+import BusinessLogic.UserBL;
 import BusinessLogic.Entities.Pet;
-import BusinessLogic.Entities.Sexo;
-import Framework.EdadMenosCeroException;
+import BusinessLogic.Entities.User;
 import UserInterface.FrameMaster;
 import Framework.*;
 
@@ -38,7 +34,6 @@ public class App {
         try {
             UIManager.setLookAndFeel(new FlatDarculaLaf());
         } catch (UnsupportedLookAndFeelException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } 
         
@@ -84,24 +79,27 @@ public class App {
         frame.setVisible(true);
     }
 
-    public static void main(String[] args) {
-        //Configuracion de propiedades de la aplicaci�n
-        AppConfiguration.load("src/config.properties"); 
-        System.out.println(AppConfiguration.getDBName());
-        System.out.println(AppConfiguration.getDBPathConnection());
-
+    public static void main(String[] args) throws AppException, IOException {
+        //APP.loadProperties();
+        System.out.println("--------------------------");
+        System.out.println(APP.getProperty(APP.GLOBAL.KEY_DB_FULLPATH));
+        System.out.println("--------------------------");
+        
+        System.out.println("GET DATA FROM API_REST : << GET-USERS >> ");
         try {
-            SexoBL sexo = new SexoBL();
-            for (Sexo s : sexo.GetAllSexo()) {
-                System.out.println(s.getNombre());
-            }
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
-
-
-        //Acceso a datos y Exception
+            UserBL userBL = new UserBL();
+            for (User p : userBL.getUsers()) 
+                System.out.println(
+                        "\n\t[+] USER" 
+                        +"\n\t - Id: "        + p.getId() 
+                        +"\n\t - Name: "      + p.getName().toUpperCase()
+                        +"\n\t - Email: "     + p.getEmail()
+                        +"\n\t - Phone: "     + p.getPhone()
+                        +"\n\t - Website: "   + p.getWebsite()
+                        +"\n\t - Company: "   + p.getEmpresa().toUpperCase());
+        } catch (Exception e) {}
+        
+        System.out.println("GET DATA FROM SQLITE : << GET-PET >> ");
         try {
             PetBL pet =  new PetBL();
             for (Pet p : pet.GetAllPets()) {
@@ -109,10 +107,12 @@ public class App {
                 System.out.println("Nombre:" + p.getNombre());
                 System.out.println("Raza:" + p.getRaza());
             }
-            // Stream<Pet> stream=pet.GetAllPet();
-            // stream  .map(p -> p.getNombre())
-            //         .forEach(System.out::println);
-        } catch (Exception e) { }
+        } catch (Exception e) {}
+       
+
+        // Stream<Pet> stream=pet.GetAllPet();
+        // stream  .map(p -> p.getNombre())
+        //         .forEach(System.out::println);
 
         //dac.getPersonaID(1);
         //dac.getPersonaID(3);

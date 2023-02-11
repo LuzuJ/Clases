@@ -9,5 +9,6 @@
             "lib/flatlaf-intellij-themes-3.0.jar",
             "lib/flatlaf-1.2.jar"
         ]
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }

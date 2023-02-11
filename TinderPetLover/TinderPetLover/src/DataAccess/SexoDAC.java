@@ -5,13 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import Framework.AppConfiguration;
+import Framework.APP;
 import Framework.AppException;
 
 public class SexoDAC extends SQLiteDataHelper {
-    public SexoDAC(){
+    public SexoDAC() throws AppException{
         //      "jdbc://c: data7petda.db"
-        super(AppConfiguration.getDBPathConnection());
+        //super(AppConfiguration.getDBPathConnection());
+        super(APP.getProperty(APP.GLOBAL.KEY_DB_FULLPATH));
     }
 
     public ResultSet getAllSexo() throws AppException{

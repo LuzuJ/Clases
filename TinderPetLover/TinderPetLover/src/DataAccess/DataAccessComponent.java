@@ -4,13 +4,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import Framework.AppConfiguration;
+
+import Framework.APP;
 import Framework.AppException;
 
 public class DataAccessComponent extends SQLiteDataHelper {
 
-    public DataAccessComponent() {
-        super(AppConfiguration.getDBPathConnection());
+    public DataAccessComponent() throws AppException {
+        super(APP.getProperty (APP.GLOBAL.KEY_DB_FULLPATH));
     }
 
     public void getPersona() {
@@ -121,8 +122,6 @@ public class DataAccessComponent extends SQLiteDataHelper {
             
             try {
                 System.out.println("Conectandose a la base de datos..." + strConnDB);
-                int a =2/2;
-                int b ;
                 //int c= a +b;
                 //Integer.parseInt( "TiempoConeccion"  ) ;
                 //System.err.println(""+null);
