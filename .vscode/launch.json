@@ -3,5 +3,13 @@
     // Mantenga el puntero para ver las descripciones de los existentes atributos.
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch AFDMaqVenta",
+            "request": "launch",
+            "mainClass": "Extra.AFDMaqVenta",
+            "projectName": "Clases_b690da2b"
+        }
+    ]
 }
